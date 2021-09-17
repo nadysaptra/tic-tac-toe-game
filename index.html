@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ 
+<head>
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+ 
+    <!-- CSS file Included -->
+    <link rel="stylesheet"
+        type="text/css" href="style.css">
+ 
+    <!-- JavaScript file included -->
+    <script src="script.js"></script>
+</head>
+ 
+<body>
+    <div id="main">
+        <h1>TIC TAC TOE</h1>
+ 
+        <!-- Game Instructions -->
+        <p id="ins">Game starts by just Tap on
+            box<br><br>First Player starts as
+            <b>Player X</b><br>And<br>Second
+            Player as <b>Player 0</b>
+        </p>
+        <p>Player <span class="player-turn"></span> turn</p>
+ 
+ 
+        <br><br>
+        <div id="board"></div>
+        
+        
+ 
+        <!-- Grid end here  -->
+        <br><br><br>
+        <div class="winner hide">Player winner is <span class="winner-id"></span></div>
+        <br/>
+        Board Size
+        <input type="number" value="3" min="3" onchange="changeSize()" id="size" /> <button type="button" onclick="reset()" class="btn-create">Create Board</button>
+        <!-- Button to reset game -->
+        <button id="but" onclick="reset()">
+            RESET
+        </button>
+ 
+        <br><br>
+        <!-- Space to show player turn -->
+        <p id="print"></p>
+ 
+ 
+    </div>
+</body>
+ 
+</html>
